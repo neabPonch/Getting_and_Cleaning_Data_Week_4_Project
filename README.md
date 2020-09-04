@@ -1,8 +1,3 @@
-## Course Project Overview
-Johns Hopkins Data Science Specialization Getting and Cleaning Data Coursera Week 4 Class Project
-
-R code for Cleaning and Working with Data
-
 ## Source Data
 
 The data used in this course project represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
