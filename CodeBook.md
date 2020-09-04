@@ -46,10 +46,18 @@ The dataset includes the following files:
 
 Merges the training and the test sets to create one data set. Source code "run_analysis.R" loads both test and train data, processes them, and merges the results into one dataset.
 
+SubjectData, ActivityData, and FeaturesData merge into DataSet to satisfy this.
+
 Extracts only the measurements on the mean and standard deviation for each measurement. Source code "run_analysis.R" extracts the mean and standard deviation data into one dataset with appropriate column names.
+
+If "mean" or "std" were found in the FeaturesNames data, it was extracted and stored in subFeaturesNames, then used to subset DataSet.
 
 Uses descriptive activity names to name the activities in the data set. Source code "run_analysis.R" loads the descriptive feature and activity labels.
 
 Appropriately labels the data set with descriptive variable names Source code "run_analysis.R" adds appropriately descriptive variable names to the large dataset columns (variables).
 
+"ActivityNumber", "Activity", "time", "frequency", "Accelerometer", "Gyroscope", "Magnitude", and "Body" were used as more appropriate activity/variable names.
+
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject Source code "run_analysis.R" calculates the average for all measurement columns grouped by variables Activity and Subject and then writes the output to a local text file named "tidydata.txt""
+
+tidydata.txt is included as part of this repo.
